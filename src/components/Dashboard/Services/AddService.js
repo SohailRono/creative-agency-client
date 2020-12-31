@@ -26,7 +26,7 @@ const AddService = () => {
         formData.append('description', services.description);
         formData.append('cssclass', services.cssclass);
 
-        fetch('http://localhost:5000/addServices', {
+        fetch('https://limitless-beach-77218.herokuapp.com/addServices', {
             method: 'POST',
             body: formData
         })

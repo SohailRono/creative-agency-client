@@ -27,7 +27,7 @@ const AddReview = () => {
         formData.append('description', reviews.description);
         formData.append('file', file);
 
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://limitless-beach-77218.herokuapp.com/addReview', {
             method: 'POST',
             body: formData
         })

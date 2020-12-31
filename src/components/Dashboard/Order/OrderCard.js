@@ -7,7 +7,7 @@ const OrderCard = ({ order }) => {
             <div class="card " style={{height:220}}>
                 <div class="card-body">
                     <div className="d-flex justify-content-between">
-                        <img style={{ width: 74 }} src={`http://localhost:5000/${order.img}`} className="img-fluid" alt="..." />
+                        <img style={{ width: 74 }} src={`https://limitless-beach-77218.herokuapp.com/${order.img}`} className="img-fluid" alt="..." />
                         <div>
                             <input type="button" className="btn btn-sm btn-info" name="" id="" value="pending" />
                         </div>

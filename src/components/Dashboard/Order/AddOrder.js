@@ -12,7 +12,7 @@ const AddOrders = () => {
     console.log("id", id)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/getServiceById/${id}`)
+        fetch(`https://limitless-beach-77218.herokuapp.com/getServiceById/${id}`)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, []);
@@ -40,7 +40,7 @@ const AddOrders = () => {
         formData.append('status', "pending");
         formData.append('file', file);
 
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://limitless-beach-77218.herokuapp.com/addOrder', {
             method: 'POST',
             body: formData
         })

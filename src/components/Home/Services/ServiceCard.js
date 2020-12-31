@@ -8,7 +8,7 @@ const ServiceCard = ({ service }) => {
             <Link style={{ textDecoration: 'none' }} to={`/addorder/${service._id}`}>
                 <div className={`${service.cssclass} p-3 m-3`} style={{ width: '18rem', height: 250 }}>
                     <div className="dd d-flex align-items-center">
-                        <img style={{ width: 74 }} src={`http://localhost:5000/${service.img}`} className="card-img-top m-auto " alt="..." />
+                        <img style={{ width: 74 }} src={`https://limitless-beach-77218.herokuapp.com/${service.img}`} className="card-img-top m-auto " alt="..." />
                     </div>
                     <div className="card-body text-center">
                         <h5 className="text-dark">{service.title}</h5>

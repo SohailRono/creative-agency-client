@@ -8,7 +8,7 @@ const ServiceList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [orders, setOrders] = useState([]);
         useEffect(() => {
-            fetch('http://localhost:5000/getOrders')
+            fetch('https://limitless-beach-77218.herokuapp.com/getOrders')
                 .then(res => res.json())
                 .then(data => setOrders(data));
         }, [])
